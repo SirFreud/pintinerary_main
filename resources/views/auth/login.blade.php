@@ -6,7 +6,7 @@
     <div class="container is-fluid">
         <div class="columns is-marginless is-centered">
             <div class="column is-half has-text-centered">
-                <h1 class="title"></h1>
+                <h1 class="title">Sign In</h1>
             </div>
         </div>
     </div>
