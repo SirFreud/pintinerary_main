@@ -14,7 +14,7 @@ class ItineraryController extends Controller
      */
     public function index()
     {
-        //
+        return view('itinerary.index')
     }
 
     /**

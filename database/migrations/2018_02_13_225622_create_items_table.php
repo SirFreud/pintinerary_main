@@ -18,7 +18,7 @@ class CreateItemsTable extends Migration
             $table->unsignedInteger('itinerary_id')->index();
             $table->string('item_name');
             $table->text('notes');
-            $table->integer('price', 6, 2);
+            $table->integer('price');
             $table->time('time');
             $table->integer('day_number');
             $table->softDeletes();
