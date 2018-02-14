@@ -11,6 +11,20 @@ class Itinerary extends Model
 {
     use Sluggable, SoftDeletes;
 
+    /**
+     * The attributes that are mass assignable.
+     *
+     * @var array
+     */
+    protected $fillable = [
+        'title',
+        'total_days',
+        'category',
+        'region',
+        'overview',
+        'total_price'
+    ];
+
     public function items()
     {
         return $this->hasMany(Item::class);

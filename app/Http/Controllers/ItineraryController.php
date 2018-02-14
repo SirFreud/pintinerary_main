@@ -33,9 +33,18 @@ class ItineraryController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(Request $request) 
     {
-        //
+        $itinerary = Itinerary::create([
+            'title'      => request('title'),
+            'total_days' => request('total_days'),
+            'category'   => request('category'),
+            'region'     => request('region'),
+            'total_price' => request('total_price'),
+            'overview'   => request('overview')
+        ]);
+
+        return redirect(route('home'));
     }
 
     /**

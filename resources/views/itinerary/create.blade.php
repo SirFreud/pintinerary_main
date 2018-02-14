@@ -47,7 +47,7 @@
                             <label class="label">Category</label>
                             <div class="control">
                                 <div class="select">
-                                    <select>
+                                    <select name="category" id="category">
                                         <option value="backpacker">Backpacker</option>
                                         <option value="couple">Couple</option>
                                         <option value="family">Family</option>
@@ -60,19 +60,32 @@
                             <label class="label">Region</label>
                             <div class="control">
 
-                                <div class="select is-multiple" style="width: 50%">
-                                  <select multiple size="8">
-                                    <option value="Europe" name="category">Europe</option>
-                                    <option value="North America" name="category">North America</option>
-                                    <option value="South America" name="category">South America</option>
-                                    <option value="Asia" name="category">Asia</option>
-                                    <option value="Africa" name="category">Africa</option>
-                                    <option value="Australia" name="category">Australia</option>
-                                    <option value="Middle East" name="category">Middle East</option>
-                                    <option value="Other" name="category">Other</option>
+                                <div class="select is-multiple">
+                                  <select multiple size="8" name="region" id="region">
+                                    <option value="Europe" >Europe</option>
+                                    <option value="North America" >North America</option>
+                                    <option value="South America" >South America</option>
+                                    <option value="Asia" >Asia</option>
+                                    <option value="Africa" >Africa</option>
+                                    <option value="Australia" >Australia</option>
+                                    <option value="Middle East" >Middle East</option>
+                                    <option value="Other" >Other</option>
                                   </select>
                                 </div>
                             </div>
+                        </div>
+
+                        <div class="field">
+                            <label for="total_price" class="label">Total total_price</label>
+                            <p class="control">
+                                <input type="text" name="total_price" id="total_price" placeholder="In USD" class="input{{ $errors->has('total_price') ? ' is-danger' : '' }}" required autofocus>
+                            </p>
+                        
+                            @if ($errors->has('total_price'))
+                                <p class="help is-danger">
+                                    {{ $errors->first('total_price') }}
+                                </p>
+                            @endif
                         </div>
 
                         <div class="field">
@@ -87,6 +100,16 @@
                                 </p>
                             @endif
                         </div>
-                        
+
+                        <div class="field">
+                            <p class="control">
+                                <button class="button is-primary">Submit</button>
+                            </p>
+                        </div>
+
                     </form>
+                </div>
+            </div>
+        </div>
+    </section>
 @endsection
