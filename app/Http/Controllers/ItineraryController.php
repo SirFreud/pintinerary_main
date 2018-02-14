@@ -44,7 +44,7 @@ class ItineraryController extends Controller
             'overview'   => request('overview')
         ]);
 
-        return redirect(route('home'));
+        return redirect(route('item.create'));
     }
 
     /**
