@@ -5,15 +5,15 @@
     <div class="container is-fluid">
         <div class="columns is-marginless is-centered">
             <div class="column is-half has-text-centered">
-                <h1 class="title">Create An Itinerary</h1>
+                <h1 class="title">Day</h1>
             </div>
         </div>
     </div>
 </section>
     <div class="breadcrumb has-arrow-separator is-centered">
         <ul>
-            <li class="is-active"><a href="#">Main</a></li>
-            <li><a href="#">Details</a></li>
+            <li><a href="#">Main</a></li>
+            <li class="is-active"><a href="#">Details</a></li>
         </ul>
     </div>
     <section class="section content" style="padding-top: 0px">
@@ -117,7 +117,7 @@
 
                         <div class="field">
                             <p class="control">
-                                <button class="button is-primary">Create</button>
+                                <button class="button is-primary">Next</button>
                             </p>
                         </div>
 
