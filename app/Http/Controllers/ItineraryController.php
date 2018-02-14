@@ -14,7 +14,7 @@ class ItineraryController extends Controller
      */
     public function index()
     {
-        return view('itinerary.index')
+        //
     }
 
     /**
@@ -24,7 +24,7 @@ class ItineraryController extends Controller
      */
     public function create()
     {
-        //
+        return view('itinerary.create'); 
     }
 
     /**
